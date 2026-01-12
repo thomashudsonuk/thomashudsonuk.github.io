@@ -1,0 +1,56 @@
+---
+title: My First Blog Post
+description: An example blog post to get you started
+post_date: 2024-01-12
+post_category: blog_post
+tutorial_number: 1
+prob_linkage_category: example
+date: 2024-01-12
+---
+
+export { Layout as default } from '../components/Layout';
+import { SEO } from "../components/SEO"
+export const Head = ( props ) => <SEO frontmatter={props.pageContext.frontmatter} />;
+
+# My First Blog Post
+
+Welcome to your new blog! This is an example post to show you how to structure your articles.
+
+## Frontmatter
+
+Every post needs frontmatter at the top:
+
+```yaml
+---
+title: Your Post Title
+description: A brief description
+post_date: YYYY-MM-DD
+post_category: blog_post  # or non_blog_post for pages
+---
+```
+
+## Writing Content
+
+You can write in Markdown here. Use headings, lists, links, etc.
+
+- Bullet points
+- Are easy
+
+1. Numbered lists
+2. Too
+
+## Code Blocks
+
+```javascript
+console.log("Hello, world!");
+```
+
+## Images
+
+Place images in `src/images/` and reference them like:
+
+![Alt text](image.jpg)
+
+## Conclusion
+
+Edit this file or create new ones in `src/mdx/` to add your content. Happy blogging!

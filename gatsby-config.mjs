@@ -5,7 +5,7 @@ import rehypeKatex from 'rehype-katex'
 
 import * as dotenv from 'dotenv';
 dotenv.config({ path: '.env' });
-const siteUrl = env.URL || `https://www.robinlinacre.com`
+const siteUrl = env.URL || `https://thomashudsonuk.github.io`
 
 
 
@@ -19,10 +19,10 @@ const config = {
     DEV_SSR: true
   },
   siteMetadata: {
-    title: `Robin Linacre's blog`,
-    description: `Probabilistic record linkage, Data Deduplication, Data Science, Engineering and the Environment`,
+    title: `Your Blog Title`,
+    description: `Your blog description`,
     siteUrl: siteUrl,
-    twitterUsername: `@robinlinacre`,
+    twitterUsername: `@yourusername`,
     image: `/gatsby-icon.png`,
   },
   plugins: ["gatsby-plugin-postcss",
@@ -59,17 +59,6 @@ const config = {
           `source sans pro:400`
         ],
         display: 'swap'
-      }
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          "G-94373ZKHEE"
-        ],
-        gtagConfig: {
-          anonymize_ip: true,
-        },
       }
     },
     {
@@ -110,7 +99,6 @@ const config = {
                 frontmatter {
                   title
                   post_date
-                  code_url
                   description
                 }
                 fields {
@@ -174,7 +162,7 @@ const config = {
             }
             `,
             output: "/rss.xml",
-            title: "Robin Linacre's homepage: Probabilistic record linkage, Data Science and Data Engineering",
+            title: "Your Blog Title: RSS Feed",
           },
         ],
       }

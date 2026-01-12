@@ -1,9 +1,9 @@
 {
-  "name": "robinlinacre",
+  "name": "my-blog",
   "version": "1.0.0",
   "private": true,
-  "description": "robinlinacre",
-  "author": "Robin Linacre",
+  "description": "My personal blog",
+  "author": "Your Name",
   "keywords": [
     "gatsby"
   ],
